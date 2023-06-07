@@ -1,0 +1,13 @@
+#some thinking
+#target：
+#多通道3d图像->带墨水像素
+#preprcess
+#impotent : 归一化 64个通道 过滤出有效信息
+#        图像强化 ：加噪声 翻转 变形 
+#model 
+#1. from long squen to 1 piexl by conv3d  simple convnet 3x3 
+#2. from long squen at zdim to 1 piexl transorform ->查看墨水像素间的关联性 边缘像素 
+#3. mutplite chanel  ResUnet -> one chanel 
+#4. mutplite chanel  ResUnet -> one chanel  32=>16
+#5. 2.5d use resnet
+# extrc
